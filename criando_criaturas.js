@@ -25,3 +25,7 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
     return criatura
 }
 
+//Testes
+// ~ Criar Criatura
+// let criatura1 = criarCriatura('ID', 0, colors[0], materials[0], smells[0], behaviors[0])
+// console.log(criatura1)
