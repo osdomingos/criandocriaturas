@@ -29,3 +29,38 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 // ~ Criar Criatura
 // let criatura1 = criarCriatura('ID', 0, colors[0], materials[0], smells[0], behaviors[0])
 // console.log(criatura1)
+
+//Funções
+function gerarId() {
+    id = 'ID\t#'
+    
+    materialPrincipal = Math.floor(Math.random() * (materials.length - 1))
+    if (materialPrincipal < 10) {
+        id += 'M0' + `${materialPrincipal}`
+    } else {
+        id += 'M' + `${materialPrincipal}`
+    }
+
+    materialSecundario = Math.floor(Math.random() * (materials.length-1))
+    if (materialSecundario < 10) {
+        id += 'm0' + `${materialSecundario}`
+    } else {
+        id += 'm' + `${materialSecundario}`
+    }
+
+    cheiroPrincipal = Math.floor(Math.random() * (smells.length - 1))
+    if (cheiroPrincipal < 10) {
+        id += 'S0' + `${cheiroPrincipal}`
+    } else {
+        id += 'S' + `${cheiroPrincipal}`
+    }
+
+    cheiroSecundario = Math.floor(Math.random() * (smells.length - 1))
+    if (cheiroSecundario < 10) {
+        id += 's0' + `${cheiroSecundario}`
+    } else {
+        id += 's' + `${cheiroSecundario}`
+    }
+
+    return id
+}
