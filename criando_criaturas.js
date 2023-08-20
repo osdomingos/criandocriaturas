@@ -32,10 +32,14 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 // ~ gerarID
 // let criatura2 = criarCriatura(gerarId(), 0, colors[0], materials[0], smells[0], behaviors[0])
 // console.log(criatura2)
+// ~ gerarIdade
+let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
+console.log(criatura3)
+
 
 //Funções
 function gerarId() {
-    id = 'ID\t#'
+    id = 'ID #'
     
     materialPrincipal = Math.floor(Math.random() * (materials.length - 1))
     if (materialPrincipal < 10) {
