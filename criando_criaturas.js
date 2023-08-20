@@ -12,3 +12,16 @@ let materialSecundario = 0
 let cheiroPrincipal = 0
 let cheiroSecundario = 0
 
+//Objeto criatura
+const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
+    const criatura = {
+        id,
+        idade,
+        cores,
+        materiais,
+        cheiros,
+        comportamento
+    }
+    return criatura
+}
+
