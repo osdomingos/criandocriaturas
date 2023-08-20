@@ -12,6 +12,7 @@ let materialPrincipal = 0
 let materialSecundario = 0
 let cheiroPrincipal = 0
 let cheiroSecundario = 0
+const criaturaN = document.getElementById('n')
 const criaturaId = document.getElementById('id')
 const criaturaIdade = document.getElementById('idade')
 const criaturaCores = document.getElementById('cores')
@@ -128,3 +129,18 @@ function gerarCheiros(maior, menor) {
 function gerarComportamento() {
     return behaviors[Math.floor(Math.random() * (behaviors.length - 1))]
 }
+
+
+//Visualização da criatura
+let n = 0
+const exibirCriatura = (n, criatura) => {
+    n++
+    criaturaN.innerHTML = `${n}`
+    criaturaId.innerHTML = `ID ${criatura.id}`
+    criaturaIdade.innerHTML = `Idade: ${criatura.idade}`
+    criaturaMateriais.innerHTML = `Materiais: Formada principalmente por ${criatura.materiais[0]} e parcialmente por ${criatura.materiais[1]}`
+    criaturaCores.innerHTML = `Coloração: Corpo é ${criatura.cores[0]}, com partes ${criatura.cores[1]} e muco ${criatura.cores[2]}`
+    criaturaCheiros.innerHTML = `Odor: Tem cheiro pungente de ${criatura.cheiros[0]} com nuances de ${criatura.cheiros[1]}`
+    criaturaComportamento.innerHTML = `Comportamento dominante: ${criatura.comportamento}`
+}
+
