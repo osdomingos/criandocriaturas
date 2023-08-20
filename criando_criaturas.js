@@ -33,8 +33,8 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 // let criatura2 = criarCriatura(gerarId(), 0, colors[0], materials[0], smells[0], behaviors[0])
 // console.log(criatura2)
 // ~ gerarIdade
-let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
-console.log(criatura3)
+// let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
+// console.log(criatura3)
 
 
 //Funções
@@ -75,3 +75,16 @@ function gerarId() {
 function gerarIdade() {
     return Math.floor(Math.random() * 1000000)
 }
+
+function gerarCores() {
+    cores = []
+    let corpo = Math.floor(Math.random() * (colors.length - 1))
+    let partes = Math.floor(Math.random() * (colors.length - 1))
+    let muco = Math.floor(Math.random() * (colors.length - 1))
+    cores.push(colors[corpo])
+    cores.push(colors[partes])
+    cores.push(colors[muco])
+
+    return cores
+}
+
