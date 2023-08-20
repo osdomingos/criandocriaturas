@@ -6,3 +6,9 @@ behaviors = ["Polinização", "Comportamento social cooperativo", "Simbiose mutu
 colors = ['Branco', 'Preto', 'Cinza', 'Azul', 'Verde', 'Vermelho', 'Amarelo', 'Laranja', 'Roxo', 'Rosa', 'Marrom', 'Bege', 'Dourado', 'Prateado', 'Creme', 'Turquesa', 'Violeta', 'Magenta', 'Ciano', 'Aqua', 'Lavanda', 'Coral', 'Oliva', 'Esmeralda', 'Índigo', 'Ameixa', 'Cáqui', 'Âmbar', 'Malva', 'Salmão', 'Pêssego', 'Azul-celeste', 'Gelo', 'Chocolate', 'Caramelo', 'Púrpura', 'Ouro-rosa', 'Safira', 'Ametista', 'Marfim', 'Grená', 'Taupe', 'Bordô', 'Chartreuse', 'Champagne', 'Íris', 'Ágata', 'Melancia', 'Azul-turquesa', 'Marrom-avermelhado', 'Verde-esmeralda', 'Cinza-azulado', 'Rosa-choque', 'Vermelho-alaranjado', 'Amarelo-limão', 'Verde-azulado', 'Violeta-avermelhado', 'Laranja-avermelhado', 'Cinza-rosado', 'Verde-oliva', 'Amarelo-claro', 'Azul-acinzentado', 'Verde-menta', 'Violeta-azulado', 'Laranja-claro', 'Rosa-pálido', 'Marrom-dourado']
 colors_hex = ['#FFFFFF', '#000000', '#808080', '#0000FF', '#008000', '#FF0000', '#FFFF00', '#FFA500', '#800080', '#FFC0CB', '#800000', '#F5F5DC', '#DAA520', '#C0C0C0', '#FFFDD0', '#40E0D0', '#EE82EE', '#FF00FF', '#00FFFF', '#00FFFF', '#E6E6FA', '#FF7F50', '#808000', '#00FF00', '#4B0082', '#DDA0DD', '#F0E68C', '#FFA07A', '#B0E0E6', '#D2691E', '#FFDAB9', '#B0E0E6', '#F8F8FF', '#D2691E', '#8B4513', '#800080', '#FF69B4', '#0000FF', '#9966CC', '#FFFFF0', '#800000', '#483C32', '#800000', '#7FFF00', '#F7E7CE', '#5A4FCF', '#B57281', '#FC6C85', '#00CED1', '#8B0000', '#006400', '#708090', '#FF69B4', '#FF4500', '#ADFF2F', '#00CED1', '#D02090', '#FF4500', '#C0C0C0', '#808000', '#FFFFE0', '#B0C4DE', '#00FA9A', '#9370DB', '#FFA500', '#FFD1DC', '#B8860B']
 
+//Variáveis globlais
+let materialPrincipal = 0
+let materialSecundario = 0
+let cheiroPrincipal = 0
+let cheiroSecundario = 0
+
