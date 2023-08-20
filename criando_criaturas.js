@@ -115,3 +115,7 @@ function gerarCheiros(maior, menor) {
 
     return cheiros
 }
+
+function gerarComportamento() {
+    return behaviors[Math.floor(Math.random() * (behaviors.length - 1))]
+}
