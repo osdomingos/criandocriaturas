@@ -12,6 +12,12 @@ let materialPrincipal = 0
 let materialSecundario = 0
 let cheiroPrincipal = 0
 let cheiroSecundario = 0
+const criaturaId = document.getElementById('id')
+const criaturaIdade = document.getElementById('idade')
+const criaturaCores = document.getElementById('cores')
+const criaturaMateriais = document.getElementById('materiais')
+const criaturaCheiros = document.getElementById('cheiros')
+const criaturaComportamento = document.getElementById('comportamento')
 
 
 //Objeto criatura
