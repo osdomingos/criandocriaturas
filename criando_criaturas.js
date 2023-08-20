@@ -91,3 +91,10 @@ function gerarCores() {
     return cores
 }
 
+function gerarMateriais(maior, menor) {
+    materiais = []
+    materiais.push(materials[maior])
+    materiais.push(materials[menor])
+    
+    return materiais
+}
