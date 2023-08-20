@@ -12,18 +12,11 @@ let materialPrincipal = 0
 let materialSecundario = 0
 let cheiroPrincipal = 0
 let cheiroSecundario = 0
-const criaturaN = document.getElementById('n')
-const criaturaId = document.getElementById('id')
-const criaturaIdade = document.getElementById('idade')
-const criaturaCores = document.getElementById('cores')
-const criaturaMateriais = document.getElementById('materiais')
-const criaturaCheiros = document.getElementById('cheiros')
-const criaturaComportamento = document.getElementById('comportamento')
 
 
 //Objeto criatura
 const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
-    const criatura = {
+    let criatura = {
         id,
         idade,
         cores,
@@ -133,10 +126,17 @@ function gerarComportamento() {
 
 //Visualização da criatura
 let n = 0
-const exibirCriatura = (n, criatura) => {
-    n++
+const exibirCriatura = (criatura) => {
+    const criaturaN = document.getElementById('n')
+    const criaturaId = document.getElementById('id')
+    const criaturaIdade = document.getElementById('idade')
+    const criaturaCores = document.getElementById('cores')
+    const criaturaMateriais = document.getElementById('materiais')
+    const criaturaCheiros = document.getElementById('cheiros')
+    const criaturaComportamento = document.getElementById('comportamento')
+
     criaturaN.innerHTML = `${n}`
-    criaturaId.innerHTML = `ID ${criatura.id}`
+    criaturaId.innerHTML = `${criatura.id}`
     criaturaIdade.innerHTML = `Idade: ${criatura.idade}`
     criaturaMateriais.innerHTML = `Materiais: Formada principalmente por ${criatura.materiais[0]} e parcialmente por ${criatura.materiais[1]}`
     criaturaCores.innerHTML = `Coloração: Corpo é ${criatura.cores[0]}, com partes ${criatura.cores[1]} e muco ${criatura.cores[2]}`
@@ -144,3 +144,11 @@ const exibirCriatura = (n, criatura) => {
     criaturaComportamento.innerHTML = `Comportamento dominante: ${criatura.comportamento}`
 }
 
+function gerarCriatura() {
+    n++
+    let criatura1 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), gerarMateriais(materialPrincipal, materialSecundario), gerarCheiros(cheiroPrincipal, cheiroSecundario), gerarComportamento())
+    console.log(criatura1)
+
+    exibirCriatura(criatura1)
+    console.log('Funciona')
+}
