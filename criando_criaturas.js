@@ -36,8 +36,11 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 // let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
 // console.log(criatura3)
 // ~ gerarCores
-let criatura4 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), materials[0], smells[0], behaviors[0])
-console.log(criatura4)
+// let criatura4 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), materials[0], smells[0], behaviors[0])
+// console.log(criatura4)
+// ~ gerarMateriais
+let criatura5 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), gerarMateriais(materialPrincipal, materialSecundario), smells[0], behaviors[0])
+console.log(criatura5)
 
 
 //Funções
@@ -95,6 +98,14 @@ function gerarMateriais(maior, menor) {
     materiais = []
     materiais.push(materials[maior])
     materiais.push(materials[menor])
-    
+
     return materiais
+}
+
+function gerarCheiros(maior, menor) {
+    cheiros = []
+    cheiros.push(smells[maior])
+    cheiros.push(smells[menor])
+
+    return cheiros
 }
