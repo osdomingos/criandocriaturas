@@ -35,6 +35,9 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 // ~ gerarIdade
 // let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
 // console.log(criatura3)
+// ~ gerarCores
+let criatura4 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), materials[0], smells[0], behaviors[0])
+console.log(criatura4)
 
 
 //Funções
