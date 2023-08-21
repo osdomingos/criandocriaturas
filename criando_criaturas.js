@@ -134,7 +134,7 @@ const exibirCriatura = (criatura) => {
     const criaturaMateriais = document.getElementById('materiais')
     const criaturaCheiros = document.getElementById('cheiros')
     const criaturaComportamento = document.getElementById('comportamento')
-    const criaturaImagem = document.getElementById('imagem')
+    
 
     criaturaN.innerHTML = `${n}`
     criaturaId.innerHTML = `${criatura.id}`
@@ -143,19 +143,19 @@ const exibirCriatura = (criatura) => {
     criaturaCores.innerHTML = `Coloração: Corpo é ${criatura.cores[0].toLowerCase()}, com partes ${criatura.cores[1].toLowerCase()} e muco ${criatura.cores[2].toLowerCase()}`
     criaturaCheiros.innerHTML = `Odor: Tem cheiro pungente de ${criatura.cheiros[0].toLowerCase()} com nuances de ${criatura.cheiros[1].toLowerCase()}`
     criaturaComportamento.innerHTML = `Comportamento dominante: ${criatura.comportamento}`
-    criaturaImagem.innerHTML = gerarImagem(criatura)
+    document.getElementById('imagem').innerHTML = gerarImagem(criatura)
 }
 
 function gerarImagem(criatura) {
     let caracteres = []
     let cores = []
-    const 
-    
+    let frase = ``
+    let opcaoCor = 0
+
     for (let material of criatura.materiais) {
         let caracter = materials.indexOf(material)
         caracteres.push(ascii[caracter])
         caracteres.push(ascii[Math.floor(Math.random() * (ascii.length - 1))])
-        caracteres.push('█')
         caracteres.push('█')
         caracteres.push(' ')
     }
@@ -163,22 +163,26 @@ function gerarImagem(criatura) {
         let indiceCor = colors.indexOf(cor)
         cores.push(colors_hex[indiceCor])
     }
-    for (let linha = 0; linha < 35; linha++) {
-        let coluna = 80
-        for (let j = 0; j < coluna; j++) {
-            let opcaoCaracteres = Math.floor(Math.random() * (caracteres.lenght - 1))
-            let opcaoCores
-            let aleatorio = Math.floor(Math.random() * 101)
-            if (aleatorio < 70) {
-                opcaoCores = 0
-            } else if (aleatorio < 90) {
-                opcaoCores = 1
-            } else {
-                opcaoCores = 2
-            }
-        }
 
+    for (let i = 0; i < 12; i++) {
+        for (let j = 0; j < 25; j++) {
+            let aleatorio = Math.floor(Math.random()*100)
+            if (aleatorio < 70) {
+                opcaoCor = 0
+            } else if (aleatorio < 90) {
+                opcaoCor = 1
+            } else {
+                opcaoCor = 2
+            }
+            frase += `<span style="color:` + cores[opcaoCor] + `">` + caracteres[Math.floor(Math.random() * (caracteres.length - 1))] + `</span>`
+        }
+        frase += '<br>'
     }
+
+    console.log(`<span style="color:` + cores[opcaoCor] + `">` + caracteres[Math.floor(Math.random() * (caracteres.length - 1))]+ `</span>`)
+    console.log(caracteres)
+    console.log(cores)
+    return frase
 }
 
 function gerarCriatura() {
