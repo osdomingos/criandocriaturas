@@ -28,30 +28,6 @@ const criarCriatura = (id, idade, cores, materiais, cheiros, comportamento) => {
 }
 
 
-//Testes
-// ~ Criar Criatura
-// let criatura1 = criarCriatura('ID', 0, colors[0], materials[0], smells[0], behaviors[0])
-// console.log(criatura1)
-// ~ gerarID
-// let criatura2 = criarCriatura(gerarId(), 0, colors[0], materials[0], smells[0], behaviors[0])
-// console.log(criatura2)
-// ~ gerarIdade
-// let criatura3 = criarCriatura(gerarId(), gerarIdade(), colors[0], materials[0], smells[0], behaviors[0])
-// console.log(criatura3)
-// ~ gerarCores
-// let criatura4 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), materials[0], smells[0], behaviors[0])
-// console.log(criatura4)
-// ~ gerarMateriais
-// let criatura5 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), gerarMateriais(materialPrincipal, materialSecundario), smells[0], behaviors[0])
-// console.log(criatura5)
-// ~ gerarMateriais
-// let criatura6 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), gerarMateriais(materialPrincipal, materialSecundario), gerarCheiros(cheiroPrincipal, cheiroSecundario), behaviors[0])
-// console.log(criatura6)
-// ~ gerarMateriais
-// let criatura7 = criarCriatura(gerarId(), gerarIdade(), gerarCores(), gerarMateriais(materialPrincipal, materialSecundario), gerarCheiros(cheiroPrincipal, cheiroSecundario), gerarComportamento())
-// console.log(criatura7)
-
-
 //Funções
 function gerarId() {
     id = 'ID #'
@@ -179,9 +155,6 @@ function gerarImagem(criatura) {
         frase += '<br>'
     }
 
-    console.log(`<span style="color:` + cores[opcaoCor] + `">` + caracteres[Math.floor(Math.random() * (caracteres.length - 1))]+ `</span>`)
-    console.log(caracteres)
-    console.log(cores)
     return frase
 }
 
