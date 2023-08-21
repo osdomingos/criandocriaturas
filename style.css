@@ -1,0 +1,48 @@
+header {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+#n {
+    font-weight: 700;
+}
+
+header h1 {
+    background-image: linear-gradient(to top, #ea0a7a, #2fdf9e); /* Substitua as cores pelo seu gradiente desejado */
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+    color: transparent; /* Torna o texto transparente */
+}
+
+#imagem p {
+    text-align: justify;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 3rem;
+    max-width: 80%;
+}
+
+.descricao {
+    padding-left: 5rem;
+}
+
+.descricao p {
+    max-width: 80%;
+}
+
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-style: italic;
+}
