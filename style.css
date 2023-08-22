@@ -54,6 +54,11 @@ footer {
         margin: 0 auto;
         padding-bottom: 3rem;
     }
+
+    table {
+        max-width: 100%;
+    }
+
     .descricao {
         text-align: left;
     }
