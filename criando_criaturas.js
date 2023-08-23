@@ -177,11 +177,11 @@ function sobre() {
     const criaturaComportamento = document.getElementById('comportamento')
 
     titulo.innerHTML = 'Sobre'
-    autor.innerHTML = 'Olá, sou Osmar. Gosto de me apresentar como artista visual e (em processo) programador. Criando Criaturas surge neste processo, como exercício em front-end onde tendo reunir meu interesse pelo vasto universo da ficção científica.'
+    autor.innerHTML = 'Olá, sou Osmar. Gosto de me apresentar como artista visual e (em processo) programador. Criando Criaturas surge neste processo, como exercício em front-end onde tento reunir meu interesse pelo vasto universo da ficção científica.'
     oQueE.innerHTML = `A cada clique do botão, é criado um objeto criatura a partir da relação aleatória entre conjuntos de características. Até o momento, ${materials.length} materiais, ${colors.length} cores, ${smells.length} cheiros e ${behaviors.length} comportamentos. Além de gerar um ID que referencia o index de cada elemento nesses conjuntos e uma idade entre 0 e 1 milhão (sem adicionar "anos" no final porque imagino que existam outras unidades de medida de tempo de vida por aí).`
     criaturaMateriais.innerHTML = 'A imagem é gerada relacionando os materiais com conjunto de caracteres, que são tingidos a partir das cores da criatura.'
     oQueSera.innerHTML = 'Trazendo o digital para meu trabalho artístico, tenho projetado esculturas de uma seleção de criaturas geradas, levando em consideração os dados materiais, cheiros e cores. Farei um acervo de fotos na página assim que saírem do mundo das ideias.'
-    criaturaCheiros.innerHTML = 'Em implementações futuras, pretendo realizar a versão "Coexistência". Duas criaturas serão geradas simultaneamentes e colocadas para conviver. Por meio da comparação de seus "comportamentos dominantes" algo vai acontecer. A princípio quero apresentar cada ocorrência com um pequeno conto pois imagina Coexistência como uma espécie de literatura para a web.'
+    criaturaCheiros.innerHTML = 'Em implementações futuras, pretendo realizar a versão "Coexistência". Duas criaturas serão geradas simultaneamentes e colocadas para conviver. Por meio da comparação de seus "comportamentos dominantes" algo vai acontecer. A princípio quero apresentar cada ocorrência com um pequeno conto pois imagino Coexistência como uma espécie de literatura para a web.'
     criaturaComportamento.innerHTML = ''
     document.getElementById('imagem').innerHTML = ''
 }
